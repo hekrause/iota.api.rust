@@ -1,0 +1,14 @@
+---
+language: rust
+sudo: false
+rust:
+  - nightly
+env:
+  - DENYWARNINGS=
+  - DENYWARNINGS=1
+matrix:
+  include:
+    - rust: nightly
+      env: BENCHMARK=1
+after_success:
+    cargo bench

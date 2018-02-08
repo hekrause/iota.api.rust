@@ -8,8 +8,8 @@ use iota_api_rust::build_request_body;
 #[test]
 fn test_basic() {
     let result = build_request_body("getNodeInfo", 0u32);
-    let value: Value = result.unwrap().json().unwrap();
-    println!("{:#?}", value);
+    let _value: Value = result.unwrap().json().unwrap();
+    //println!("{:#?}", value);
     //println!("{:?}", value["latestMilestone"].as_str().unwrap());
     //println!("{:?}", value["latestSolidSubtangleMilestone"].as_str().unwrap());
 }
