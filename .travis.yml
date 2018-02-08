@@ -10,5 +10,3 @@ matrix:
   include:
     - rust: nightly
       env: BENCHMARK=1
-after_success:
-    cargo bench
